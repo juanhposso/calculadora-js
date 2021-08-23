@@ -1,16 +1,16 @@
-let $inputElement = document.querySelector('input').value;
+const $inputElement = document.querySelector('input');
 const $buttonsElement = Array.from(document.querySelectorAll('button'));
 
 $buttonsElement.forEach((button) => {
 	button.addEventListener('click', (event) => {
-		if ($inputElement == '0') {
-			return ($inputElement = event.target.value);
-			//console.log($inputElement, ' if jijij');
+		let input = $inputElement.value;
+		if (input == '0') {
+			console.log($inputElement, ' if jijij');
+			return $inputElement.setAttribute('value', event.target.value);
 		} else {
-			let resultado = $inputElement.concat(event.target.value);
-
-			return ($inputElement = resultado);
-			//console.log($inputElement, ' else');
+			let resultado = input.concat(event.target.value);
+			console.log(resultado);
+			return $inputElement.setAttribute('value', resultado);
 		}
 	});
 });

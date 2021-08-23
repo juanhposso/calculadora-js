@@ -4,17 +4,42 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
 		<title>Calculadora</title>
 	</head>
 	<body>
-		<div>
-			<input type="text" value="0" autocomplete="off" />
-		</div>
-		<div class="container-numeros">
-			<button type="button" value="1">1</button>
-			<button type="button" value="2">2</button>
-			<button type="button" value="3">3</button>
-		</div>
+		<main class="huge-container">
+			<div class="main-container">
+				<article class="title">
+					<h1>calc</h1>
+				</article>
+				<article class="result">
+					<input type="text" value="0" autocomplete="off" />
+				</article>
+				<article class="numeros-container">
+					<button type="button" value="1" class="uno default">1</button>
+					<button type="button" value="2" class="dos default">2</button>
+					<button type="button" value="3" class="tres default">3</button>
+					<button type="button" value="4" class="cuatro default">4</button>
+					<button type="button" value="5" class="cinco default">5</button>
+					<button type="button" value="6" class="seis default">6</button>
+					<button type="button" value="7" class="siete default">7</button>
+					<button type="button" value="8" class="ocho default">8</button>
+					<button type="button" value="9" class="nueve default">9</button>
+					<button type="button" value="0" class="cero default">0</button>
+					<button type="button" class="punto default">.</button>
+					<button type="button" class="slash default">/</button>
+					<button type="button" class="del default">DEL</button>
+					<button type="button" class="mas default">+</button>
+					<button type="button" class="menos default">-</button>
+					<button type="button" class="por default">x</button>
+					<button type="button" class="reset">RESET</button>
+					<button type="button" class="igual">=</button>
+				</article>
+			</div>
+		</main>
+
+		<div class="container-numeros"></div>
 
 		<script src="main.js"></script>
 	</body>
