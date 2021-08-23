@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.huge-container {
+	width: 100%;
+	height: 100%;
+	background-color: #3b4664;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	background-color: #3b4664;
+	padding: 10px;
+}
+
+.result {
+	margin: 20px 0;
+}
+
+.result input {
+	background-color: #181f32;
+	color: white;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	padding: 30px;
+	border-radius: 5px;
+	font-size: 2rem;
+	text-align: right;
+}
+
+.result input:focus {
+	border: 0;
+	outline: 0;
+}
+
+.numeros-container {
+	background-color: #252c44;
+	border-radius: 5px;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	column-gap: 15px;
+	row-gap: 15px;
+	grid-template-areas:
+		'siete ocho nueve DEL'
+		'cuatro cinco seis MAS'
+		'uno dos tres MENOS'
+		'PUNTO cero SLASH POR'
+		'RESET RESET IGUAL IGUAL';
+}
+
+.numeros-container button {
+	border-radius: 5px;
+	border: 0px;
+	border-bottom: 2px solid rgba(24, 31, 50, 0.5);
+	font-weight: 500;
+}
+
+.default {
+	padding: 10px 30px;
+	font-size: 20px;
+	color: #3b4664;
+	font-weight: 600;
+}
+
+.uno {
+	grid-area: uno;
+	background-color: #eae3d9;
+}
+.dos {
+	grid-area: dos;
+	background-color: #eae3d9;
+}
+.tres {
+	grid-area: tres;
+	background-color: #eae3d9;
+}
+.cuatro {
+	grid-area: cuatro;
+	background-color: #eae3d9;
+}
+.cinco {
+	grid-area: cinco;
+	background-color: #eae3d9;
+}
+.seis {
+	grid-area: seis;
+	background-color: #eae3d9;
+}
+.siete {
+	grid-area: siete;
+	background-color: #eae3d9;
+}
+.ocho {
+	grid-area: ocho;
+	background-color: #eae3d9;
+}
+.nueve {
+	grid-area: nueve;
+	background-color: #eae3d9;
+}
+.cero {
+	grid-area: cero;
+	background-color: #eae3d9;
+}
+.punto {
+	grid-area: PUNTO;
+	background-color: #eae3d9;
+}
+.slash {
+	grid-area: SLASH;
+	background-color: #eae3d9;
+}
+.del {
+	grid-area: DEL;
+	background-color: #647299;
+	color: white;
+}
+.mas {
+	grid-area: MAS;
+	background-color: #eae3d9;
+}
+.menos {
+	grid-area: MENOS;
+	background-color: #eae3d9;
+}
+.por {
+	grid-area: POR;
+	background-color: #eae3d9;
+}
+.reset {
+	grid-area: RESET;
+	background-color: #647299;
+	color: white;
+	font-size: 20px;
+}
+.igual {
+	grid-area: IGUAL;
+	background-color: #d13f30;
+	color: white;
+	font-size: 20px;
+}
